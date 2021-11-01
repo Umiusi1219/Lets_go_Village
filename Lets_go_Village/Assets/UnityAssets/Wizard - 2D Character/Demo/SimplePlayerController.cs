@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+//Assetに付属していたコード
+
 namespace ClearSky
 {
     public class SimplePlayerController : MonoBehaviour

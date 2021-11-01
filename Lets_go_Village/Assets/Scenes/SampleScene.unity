@@ -9153,7 +9153,7 @@ GameObject:
   - component: {fileID: 2031146117}
   - component: {fileID: 2031146118}
   m_Layer: 0
-  m_Name: PlayerBullet
+  m_Name: PlayerBulletManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9190,7 +9190,7 @@ MonoBehaviour:
   - {fileID: 7308359980321525461, guid: a6f379b0b6452574fa2385bb052f183b, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  playerBullet: {fileID: 7308359980321525461, guid: a6f379b0b6452574fa2385bb052f183b, type: 3}
+  m_PlayerBullet: {fileID: 0}
 --- !u!1 &2071761373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8853461538655865705, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
@@ -9214,7 +9214,7 @@ MonoBehaviour:
   m_pDoAttack: 1
   anim: {fileID: 0}
   m_pDirection: 1
-  playerBullet: {fileID: 2031146116}
+  playerBulletManager: {fileID: 2031146116}
 --- !u!95 &2071761378
 Animator:
   serializedVersion: 3

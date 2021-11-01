@@ -53,11 +53,11 @@
     <UnityVersion>2020.2.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerBulletScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerBulletManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\SimplePlayerController.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
-    <Compile Include="Assets\Scripts\PlayerScripts\PlayerBulletScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerScripts\PlayerBulletScript1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityAssets\Gothicvania Cemetery Artwork\about.txt" />

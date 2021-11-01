@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using ClearSky;
 
+//Assetに付属していたコード
+
 namespace ClearSky
 {
     public class WizDemo1 : MonoBehaviour

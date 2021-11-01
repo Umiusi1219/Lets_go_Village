@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     // playerステータス
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private bool alive = true;
 
 
-    [SerializeField] GameObject playerBullet;
+    [SerializeField] GameObject playerBulletManager;
     
     void Start()
     {
@@ -38,7 +39,8 @@ public class PlayerController : MonoBehaviour
 
             if(m_pDoAttack)
             {
-               Attack();
+                Attack();
+
             }
         }
     }
@@ -102,9 +104,14 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-
+            //アタックアニメーションを再生
             anim.SetTrigger("attack");
+            //所持している弾の生成
             ShootPlayerBullet();
+
+            //クールタイム
+            StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent<PlayerBulletManagerScript>().
+            m_PlayerBullet.GetComponent<PlayerBulletScript>().m_BulletCoolTime));
         }
     }
     void Hurt()
@@ -139,9 +146,22 @@ public class PlayerController : MonoBehaviour
 
     public void ShootPlayerBullet()
     {
-        Instantiate(playerBullet.GetComponent<PlayerBulletScript>().playerBullet, new Vector3
-            (gameObject.transform.position.x,
+        Instantiate(playerBulletManager.GetComponent<PlayerBulletManagerScript>().m_PlayerBullet, 
+            new Vector3(gameObject.transform.position.x + 0.5f* m_pDirection,
             gameObject.transform.position.y + 1.5f, 0.0f), Quaternion.identity);
+    }
+
+    //プレイヤーのアタックを使用しているBulletで決めてあるCoolTime分使用不可にする関数
+    IEnumerator AtaackCoolTime(float Time)
+    {
+        //playerをアタック不可にする
+        m_pDoAttack = false;
+
+        //使用しているBulletのクールタイム分停止
+        yield return new WaitForSeconds(Time);
+
+        //playerをアタック可能にする
+        m_pDoAttack = true;
     }
 }
 
