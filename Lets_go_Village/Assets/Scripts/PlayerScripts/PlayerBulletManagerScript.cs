@@ -8,6 +8,9 @@ public class PlayerBulletManagerScript : MonoBehaviour
     GameObject player;
     [SerializeField]
     List<GameObject> playerBulletList;
+    [SerializeField]
+    GameObject playerBulletUiList;
+
     public GameObject m_PlayerBullet;
 
     private void Start()
@@ -20,6 +23,7 @@ public class PlayerBulletManagerScript : MonoBehaviour
     public void SetPlayerBullet(int num)
     {
         m_PlayerBullet = playerBulletList[num];
+
     }
 
 

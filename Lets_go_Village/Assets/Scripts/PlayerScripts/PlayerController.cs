@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     // playerステータス
     public int m_playerHP = 3;
-    public float m_pMovePower = 10f;
+    public int m_playerHPMAX = 3;
+    public float m_pMovePower = 0.5f;
     public float m_pjumpPower = 15f; //Set Gravity Scale in Rigidbody2D Component to 5
     public bool m_pDoAttack = true;  //　playerAttack可能かどうか
 
@@ -20,7 +21,10 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] GameObject playerBulletManager;
-    
+
+    [SerializeField] GameObject playerHpUi;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,25 +37,41 @@ public class PlayerController : MonoBehaviour
         
         if (alive)
         {
-            
-            Jump();
-            Run();
 
             if(m_pDoAttack)
             {
+                Jump();
+                Run();
                 Attack();
-
             }
+            if (m_playerHP <= 0)
+            {
+                Die();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Hurt();
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Restart();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        anim.SetBool("isJump", false);
+        if(other.tag == "Map")
+        {
+            anim.SetBool("isJump", false);
+        }
     }
 
 
     void Run()
     {
+
         Vector3 moveVelocity = Vector3.zero;
         anim.SetBool("isRun", false);
 
@@ -77,6 +97,7 @@ public class PlayerController : MonoBehaviour
 
         }
         transform.position += moveVelocity * m_pMovePower * Time.deltaTime;
+
     }
 
     void Jump()
@@ -114,36 +135,38 @@ public class PlayerController : MonoBehaviour
             m_PlayerBullet.GetComponent<PlayerBulletScript>().m_BulletCoolTime));
         }
     }
+
+    //HPを減らしてノックバック
     void Hurt()
     {
+        if (0 < m_playerHP)
+        {
+            m_playerHP--;
+            anim.SetTrigger("hurt");
+            rb.AddForce(new Vector2(-5f * m_pDirection, 1f), ForceMode2D.Impulse);
+        }
 
-        anim.SetTrigger("hurt");
-        if (m_pDirection == 1)
-        {
-            rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
-        }
-        else
-        {
-            rb.AddForce(new Vector2(5f, 1f), ForceMode2D.Impulse);
-        }
+        playerHpUi.GetComponent<PlayerHPScript>().ChangePlayerHpUi(m_playerHPMAX, m_playerHP);
     }
 
     void Die()
     {
-        anim.SetTrigger("die");
         alive = false;
+        anim.SetTrigger("die");
 
     }
 
     void Restart()
     {
- 
+        m_playerHP = m_playerHPMAX;
         anim.SetTrigger("idle");
         alive = true;
-
+        anim.SetBool("isJump", false);
+        playerHpUi.GetComponent<PlayerHPScript>().ChangePlayerHpUi(m_playerHPMAX, m_playerHP);
     }
 
 
+    //所持している弾をplayerの位置をもとにした場所に生み出す
     public void ShootPlayerBullet()
     {
         Instantiate(playerBulletManager.GetComponent<PlayerBulletManagerScript>().m_PlayerBullet, 
