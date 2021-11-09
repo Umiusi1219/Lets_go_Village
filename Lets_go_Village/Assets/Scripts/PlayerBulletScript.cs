@@ -56,7 +56,7 @@ public class PlayerBulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag =="Map")
+        if(collision.tag == "Map"|| collision.tag == "Enemy" || collision.tag == "Chest")
         {
             Destroy(gameObject);
         }

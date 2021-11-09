@@ -127,12 +127,14 @@ public class PlayerController : MonoBehaviour
         {
             //アタックアニメーションを再生
             anim.SetTrigger("attack");
-            //所持している弾の生成
-            ShootPlayerBullet();
-
             //クールタイム
             StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent<PlayerBulletManagerScript>().
             m_PlayerBullet.GetComponent<PlayerBulletScript>().m_BulletCoolTime));
+            Debug.Log("クールタイムStart");
+
+
+
+
         }
     }
 
@@ -181,7 +183,15 @@ public class PlayerController : MonoBehaviour
         m_pDoAttack = false;
 
         //使用しているBulletのクールタイム分停止
-        yield return new WaitForSeconds(Time);
+        yield return new WaitForSeconds(Time/2);
+        Debug.Log("クールタイム１");
+
+        //所持している弾の生成
+        ShootPlayerBullet();
+
+        //使用しているBulletのクールタイム分停止
+        yield return new WaitForSeconds(Time / 2);
+        Debug.Log("クールタイム２");
 
         //playerをアタック可能にする
         m_pDoAttack = true;

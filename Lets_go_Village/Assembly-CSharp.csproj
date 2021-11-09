@@ -58,10 +58,11 @@
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\BulletItemScript\BulletItemScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\SimplePlayerController.cs" />
-    <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
-    <Compile Include="Assets\Scripts\UiScripts\TimerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerHPScript.cs" />
+    <Compile Include="Assets\Scripts\UiScripts\TimerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletUiScript.cs" />
+    <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
+    <Compile Include="Assets\Scripts\ItemScripts\ChestGoldScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityAssets\Gothicvania Cemetery Artwork\about.txt" />

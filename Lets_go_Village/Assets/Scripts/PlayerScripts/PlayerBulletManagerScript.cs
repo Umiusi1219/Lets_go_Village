@@ -13,6 +13,8 @@ public class PlayerBulletManagerScript : MonoBehaviour
 
     public GameObject m_PlayerBullet;
 
+
+
     private void Start()
     {
         //デフォルトのBulletを設定

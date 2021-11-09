@@ -24,10 +24,13 @@ public class BulletItemScript : MonoBehaviour
         //プレイヤーに接触したときに、自身の番号に対応するBulletをSetする
         if(collision.tag == "Player")
         {
+            //playerBulletManagerにset
             playerBulletManager.GetComponent<PlayerBulletManagerScript>().SetPlayerBullet(itemNum);
 
+            //playerBulletUiにset
             playerBulletUi.GetComponent<PlayerBulletUiScript>().ChangePlayerBulletUi(itemNum);
 
+            //自身を消去
             Destroy(gameObject); 
         }
 
