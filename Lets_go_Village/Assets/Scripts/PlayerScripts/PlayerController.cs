@@ -12,12 +12,17 @@ public class PlayerController : MonoBehaviour
     public float m_pjumpPower = 15f; //Set Gravity Scale in Rigidbody2D Component to 5
     public bool m_pDoAttack = true;  //　playerAttack可能かどうか
 
+    [SerializeField] private float pKnockBackPoewr;
+    //ダメージ直後の無敵時間
+    [SerializeField] private float invincibleTime;
+
     private Rigidbody2D rb;
     public Animator anim;
     Vector3 movement;
     public int m_pDirection = 1;
     bool isJumping = false;
     private bool alive = true;
+    private bool possibleHurt = true;
 
 
     [SerializeField] GameObject playerBulletManager;
@@ -130,10 +135,6 @@ public class PlayerController : MonoBehaviour
             //クールタイム
             StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent<PlayerBulletManagerScript>().
             m_PlayerBullet.GetComponent<PlayerBulletScript>().m_BulletCoolTime));
-            Debug.Log("クールタイムStart");
-
-
-
 
         }
     }
@@ -145,7 +146,7 @@ public class PlayerController : MonoBehaviour
         {
             m_playerHP--;
             anim.SetTrigger("hurt");
-            rb.AddForce(new Vector2(-5f * m_pDirection, 1f), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(pKnockBackPoewr * m_pDirection, 1f), ForceMode2D.Impulse);
         }
 
         playerHpUi.GetComponent<PlayerHPScript>().ChangePlayerHpUi(m_playerHPMAX, m_playerHP);
@@ -184,17 +185,39 @@ public class PlayerController : MonoBehaviour
 
         //使用しているBulletのクールタイム分停止
         yield return new WaitForSeconds(Time/2);
-        Debug.Log("クールタイム１");
 
         //所持している弾の生成
         ShootPlayerBullet();
 
         //使用しているBulletのクールタイム分停止
         yield return new WaitForSeconds(Time / 2);
-        Debug.Log("クールタイム２");
 
         //playerをアタック可能にする
         m_pDoAttack = true;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy"　&& possibleHurt)
+        {
+            {
+                Hurt();
+                StartCoroutine(HurtCoolTime());
+            }
+        }
+    }
+
+    IEnumerator HurtCoolTime()
+    {
+        //playerがダメージを受けないようにする
+        possibleHurt = false;
+
+
+        //使用しているBulletのクールタイム分停止
+        yield return new WaitForSeconds(invincibleTime);
+
+        //playerがダメージを受けるようにする
+        possibleHurt = true;
     }
 }
 
