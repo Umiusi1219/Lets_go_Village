@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
                 Run();
                 Attack();
             }
-            if (m_playerHP <= 0)
+            if (m_playerHP == 0)
             {
                 Die();
             }
@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             //アタックアニメーションを再生
             anim.SetTrigger("attack");
@@ -154,9 +154,13 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
-        alive = false;
-        anim.SetTrigger("die");
-
+        if(alive)
+        {
+            m_playerHP = 0;
+            playerHpUi.GetComponent<PlayerHPScript>().ChangePlayerHpUi(m_playerHPMAX, m_playerHP);
+            alive = false;
+            anim.SetTrigger("die");
+        }
     }
 
     void Restart()
@@ -203,6 +207,13 @@ public class PlayerController : MonoBehaviour
             {
                 Hurt();
                 StartCoroutine(HurtCoolTime());
+            }
+        }
+
+        if (collision.gameObject.tag == "DeathDed" && alive)
+        {
+            {
+                Die();
             }
         }
     }
