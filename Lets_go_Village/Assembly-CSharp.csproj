@@ -53,22 +53,23 @@
     <UnityVersion>2020.2.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerBulletScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBullet_yoru.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerBulletManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\AlphaObjectScript.cs" />
     <Compile Include="Assets\Scripts\BulletItemScript\BulletItemScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript\SkeletonScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\SimplePlayerController.cs" />
-    <Compile Include="Assets\Scripts\PlayerHPScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript\MonsterEgg.cs" />
+    <Compile Include="Assets\Scripts\UiScripts\PlayerHPScript.cs" />
     <Compile Include="Assets\Scripts\ItemScripts\ChestGoldScript.cs" />
     <Compile Include="Assets\Scripts\UiScripts\TimerScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerBulletUiScript.cs" />
+    <Compile Include="Assets\Scripts\UiScripts\PlayerBulletUiScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
-    <Compile Include="Assets\Scripts\EnemyScript\SkeletonScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyScript\MonsterEgg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityAssets\Gothicvania Cemetery Artwork\about.txt" />
-    <None Include="Assets\UnityAssets\Cainos\Pixel Art Platformer - Village Props\Changelog.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

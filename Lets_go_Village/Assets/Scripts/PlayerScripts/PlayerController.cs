@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public int m_playerHP = 3;
     public int m_playerHPMAX = 3;
     public float m_pMovePower = 0.5f;
-    public float m_pjumpPower = 15f; //Set Gravity Scale in Rigidbody2D Component to 5
+    public float m_pjumpPower = 8f; //Set Gravity Scale in Rigidbody2D Component to 5
     public bool m_pDoAttack = true;  //@playerAttack‰Â”\‚©‚Ç‚¤‚©
 
     [SerializeField] private float pKnockBackPoewr;
@@ -20,7 +20,11 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     Vector3 movement;
     public int m_pDirection = 1;
-    bool isJumping = false;
+    public bool isJumping = false;
+    [SerializeField] private bool keepPressingSpace;
+    [SerializeField] private bool pressSpace;
+    [SerializeField] private float jumpTime = 0;
+    [SerializeField] private float jumpTimeLimit = 0.5f;
     private bool alive = true;
     private bool possibleHurt = true;
 
@@ -55,10 +59,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            Hurt();
-        }
 
         if (Input.GetKeyDown(KeyCode.U))
         {
@@ -70,6 +70,15 @@ public class PlayerController : MonoBehaviour
         if(other.tag == "Map")
         {
             anim.SetBool("isJump", false);
+
+            jumpTime = 0;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Map")
+        {
+            anim.SetBool("isJump", true);
         }
     }
 
@@ -104,16 +113,32 @@ public class PlayerController : MonoBehaviour
         transform.position += moveVelocity * m_pMovePower * Time.deltaTime;
 
     }
+    
+
+
 
     void Jump()
     {
-        if ((Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
-        && !anim.GetBool("isJump"))
+        if (Input.GetKeyDown(KeyCode.Space) && !anim.GetBool("isJump"))
         {
             isJumping = true;
             anim.SetBool("isJump", true);
+            pressSpace = true;
         }
-        if (!isJumping)
+        else if ((Input.GetKey(KeyCode.Space) && jumpTime < jumpTimeLimit) && pressSpace)
+        {
+            jumpTime += Time.deltaTime;
+
+            isJumping = true;
+            keepPressingSpace = true;
+        }
+        else if(Input.GetKeyUp(KeyCode.Space))
+        {
+            keepPressingSpace = false;
+            pressSpace = false;
+        }
+
+        if (!isJumping || jumpTime > jumpTimeLimit || !keepPressingSpace)
         {
             return;
         }
@@ -122,6 +147,12 @@ public class PlayerController : MonoBehaviour
 
         Vector2 jumpVelocity = new Vector2(0, m_pjumpPower);
         rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
+
+        if(keepPressingSpace)
+        {
+            Vector2 jumpVelocity2 = new Vector2(0, (m_pjumpPower / 160)* jumpTime);
+            rb.AddForce(jumpVelocity2, ForceMode2D.Impulse);
+        }
 
         isJumping = false;
     }

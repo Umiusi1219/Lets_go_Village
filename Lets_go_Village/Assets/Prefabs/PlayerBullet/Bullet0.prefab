@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2671391274037548785}
   - component: {fileID: -5423772596501370122}
   m_Layer: 0
-  m_Name: Bullet1
+  m_Name: Bullet0
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1263c07a328ac43c19ff6c1a79a887a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60b96073820064558b98a49c7a3497db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 7308359980321525461}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bfa1f197800da41f29dee560ee391cae, type: 2}
+  m_Controller: {fileID: 9100000, guid: a767d342f70a54806ade1a7245b9aa18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 0.22
-  bulletAliveTime: 3
-  m_BulletCoolTime: 0.55
+  bulletAliveTime: 5
+  m_BulletCoolTime: 0.5
   bulletPower: 0
 --- !u!70 &2671391274037548785
 CapsuleCollider2D:
