@@ -6,7 +6,7 @@ public class BulletItemScript : MonoBehaviour
 {
 
     [SerializeField]
-    private int itemNum;
+    playerBulletType playerBulletType;
 
     [SerializeField] GameObject playerBulletUi;
 
@@ -25,10 +25,10 @@ public class BulletItemScript : MonoBehaviour
         if(collision.tag == "Player")
         {
             //playerBulletManagerÇ…set
-            playerBulletManager.GetComponent<PlayerBulletManagerScript>().SetPlayerBullet(itemNum);
+            playerBulletManager.GetComponent<PlayerBulletManagerScript>().SetPlayerBullet((int)playerBulletType);
 
             //playerBulletUiÇ…set
-            playerBulletUi.GetComponent<PlayerBulletUiScript>().ChangePlayerBulletUi(itemNum);
+            playerBulletUi.GetComponent<PlayerBulletUiScript>().ChangePlayerBulletUi((int)playerBulletType);
 
             //é©êgÇè¡ãé
             Destroy(gameObject); 

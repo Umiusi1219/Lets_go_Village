@@ -10,6 +10,8 @@ TagManager:
   - Chest
   - Enemy
   - DeathDed
+  - AlphaMap
+  - Camera
   layers:
   - Default
   - TransparentFX

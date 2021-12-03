@@ -53,9 +53,9 @@
     <UnityVersion>2020.2.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_NormalScript.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBullet_yoru.cs" />
-    <Compile Include="Assets\Scripts\PlayerScripts\PlayerBulletManagerScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\AlphaObjectScript.cs" />
     <Compile Include="Assets\Scripts\BulletItemScript\BulletItemScript.cs" />
@@ -67,6 +67,9 @@
     <Compile Include="Assets\Scripts\UiScripts\TimerScript.cs" />
     <Compile Include="Assets\Scripts\UiScripts\PlayerBulletUiScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletAdstract.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_ChikenScript.cs" />
+    <Compile Include="Assets\Scripts\SceneManagerScript\TitleSceneScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityAssets\Gothicvania Cemetery Artwork\about.txt" />

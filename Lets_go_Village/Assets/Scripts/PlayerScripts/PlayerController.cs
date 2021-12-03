@@ -67,10 +67,12 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Map")
+        if(other.tag == "Map" || other.tag == "AlphaMap"
+            || other.tag == "Chest")
         {
             anim.SetBool("isJump", false);
-
+            keepPressingSpace = false;
+            pressSpace = false;
             jumpTime = 0;
         }
     }
@@ -119,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !anim.GetBool("isJump"))
+        if (Input.GetKeyDown(KeyCode.Space) && !anim.GetBool("isJump") && !pressSpace)
         {
             isJumping = true;
             anim.SetBool("isJump", true);
@@ -164,8 +166,8 @@ public class PlayerController : MonoBehaviour
             //アタックアニメーションを再生
             anim.SetTrigger("attack");
             //クールタイム
-            StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent<PlayerBulletManagerScript>().
-            m_PlayerBullet.GetComponent<PlayerBulletScript>().m_BulletCoolTime));
+            StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent
+                <PlayerBulletManagerScript>().m_HaveBulletCoolTime));
 
         }
     }
