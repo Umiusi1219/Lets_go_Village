@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] GameObject playerParent;
+
     // playerステータス
     public int m_playerHP = 3;
     public int m_playerHPMAX = 3;
@@ -28,17 +30,24 @@ public class PlayerController : MonoBehaviour
     private bool alive = true;
     private bool possibleHurt = true;
 
-
     [SerializeField] GameObject playerBulletManager;
 
     [SerializeField] GameObject playerHpUi;
 
+    [SerializeField] GameObject gameSceneManager;
+    [SerializeField] GameObject blackoutUI;
+    [SerializeField] private float toGameOverTime = 1;
+
+
+    [SerializeField] Vector3[] generatPoints = new Vector3[4];
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         Restart();
+
+        playerParent.transform.position = generatPoints[CheckPointScript.m_nowCheckpoint];
     }
 
     private void Update()
@@ -193,6 +202,7 @@ public class PlayerController : MonoBehaviour
             playerHpUi.GetComponent<PlayerHPScript>().ChangePlayerHpUi(m_playerHPMAX, m_playerHP);
             alive = false;
             anim.SetTrigger("die");
+            StartCoroutine(DieTime());
         }
     }
 
@@ -262,6 +272,16 @@ public class PlayerController : MonoBehaviour
 
         //playerがダメージを受けるようにする
         possibleHurt = true;
+    }
+
+    IEnumerator DieTime()
+    {
+        blackoutUI.GetComponent<BlackoutScript>().Onbool_doShow();
+
+        //使用しているBulletのクールタイム分停止
+        yield return new WaitForSeconds(toGameOverTime);
+
+        gameSceneManager.GetComponent<SceneManagerScript>().PlayerDie();
     }
 }
 

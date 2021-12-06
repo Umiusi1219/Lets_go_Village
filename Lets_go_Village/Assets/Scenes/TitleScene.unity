@@ -369,7 +369,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1086220886}
-        m_TargetAssemblyTypeName: TitleSceneScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
         m_MethodName: OnClickStartButton
         m_Mode: 1
         m_Arguments:
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 1086220885}
   - component: {fileID: 1086220886}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: TitleSceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086220884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b5a1d9565de4c14083513c8873f213f, type: 3}
+  m_Script: {fileID: 11500000, guid: 573ac57ac19e4dd4f8621da92f8cf8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1534190590
@@ -898,7 +898,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1086220886}
-        m_TargetAssemblyTypeName: TitleSceneScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
         m_MethodName: OnClickExitButtom
         m_Mode: 1
         m_Arguments:

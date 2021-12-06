@@ -58,18 +58,20 @@
     <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\AlphaObjectScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletAdstract.cs" />
     <Compile Include="Assets\Scripts\BulletItemScript\BulletItemScript.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\SkeletonScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\SimplePlayerController.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\MonsterEgg.cs" />
     <Compile Include="Assets\Scripts\UiScripts\PlayerHPScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_ChikenScript.cs" />
     <Compile Include="Assets\Scripts\ItemScripts\ChestGoldScript.cs" />
     <Compile Include="Assets\Scripts\UiScripts\TimerScript.cs" />
     <Compile Include="Assets\Scripts\UiScripts\PlayerBulletUiScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
-    <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletAdstract.cs" />
-    <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_ChikenScript.cs" />
-    <Compile Include="Assets\Scripts\SceneManagerScript\TitleSceneScript.cs" />
+    <Compile Include="Assets\Scripts\CheckPointScript.cs" />
+    <Compile Include="Assets\Scripts\UiScripts\BlackoutScript.cs" />
+    <Compile Include="Assets\Scripts\SceneManagerScript\SceneManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityAssets\Gothicvania Cemetery Artwork\about.txt" />
