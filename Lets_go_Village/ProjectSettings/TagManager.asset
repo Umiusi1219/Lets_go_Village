@@ -12,6 +12,7 @@ TagManager:
   - DeathDed
   - AlphaMap
   - Camera
+  - VehicleBullet
   layers:
   - Default
   - TransparentFX

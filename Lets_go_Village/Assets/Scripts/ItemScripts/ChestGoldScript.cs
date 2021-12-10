@@ -21,7 +21,7 @@ public class ChestGoldScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "PlayerBullet")
+        if (collision.tag == "PlayerBullet" || collision.tag == "VehicleBullet")
         {
             chestAnim.SetBool("Open", true);
             chestDollider2D.enabled = false;

@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
         playerParent.transform.position = generatPoints[CheckPointScript.m_nowCheckpoint];
     }
 
+
     private void Update()
     {
         
@@ -74,10 +75,11 @@ public class PlayerController : MonoBehaviour
             Restart();
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Map" || other.tag == "AlphaMap"
-            || other.tag == "Chest")
+            || other.tag == "Chest" || other.tag == "VehicleBullet")
         {
             anim.SetBool("isJump", false);
             keepPressingSpace = false;
@@ -85,11 +87,27 @@ public class PlayerController : MonoBehaviour
             jumpTime = 0;
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Map")
+        if (other.tag == "Map" || other.tag == "AlphaMap"
+            || other.tag == "Chest" || other.tag == "VehicleBullet")
         {
             anim.SetBool("isJump", true);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && possibleHurt)
+        {
+             Hurt();
+             StartCoroutine(HurtCoolTime());
+        }
+
+        if (collision.gameObject.tag == "DeathDed" && alive)
+        {
+            Die();
         }
     }
 
@@ -125,8 +143,6 @@ public class PlayerController : MonoBehaviour
 
     }
     
-
-
 
     void Jump()
     {
@@ -243,23 +259,7 @@ public class PlayerController : MonoBehaviour
         m_pDoAttack = true;
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy"Å@&& possibleHurt)
-        {
-            {
-                Hurt();
-                StartCoroutine(HurtCoolTime());
-            }
-        }
 
-        if (collision.gameObject.tag == "DeathDed" && alive)
-        {
-            {
-                Die();
-            }
-        }
-    }
 
     IEnumerator HurtCoolTime()
     {

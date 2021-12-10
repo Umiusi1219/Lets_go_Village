@@ -60,7 +60,7 @@ public class SkeletonScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "PlayerBullet")
+        if(collision.tag == "PlayerBullet" || collision.tag == "VehicleBullet")
         {
             skeletonDed = true;
 

@@ -9,6 +9,9 @@ public class Bullet_ChikenScript : PlayerBulletAdstract
     //弾の威力
     [SerializeField] float bulletPower;
 
+    [SerializeField]
+    float bulletAliveTime;
+
     //プレイヤーを参照するためのオブジェクト
     GameObject player;
 
@@ -43,6 +46,15 @@ public class Bullet_ChikenScript : PlayerBulletAdstract
              collision.tag == "Map" || collision.tag == "AlphaMap")
         {
            Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        //生存時間が、設定されている自動消滅までの時間を上回ったら自身を消去
+        if (bulletAliveTime < elapsedTime)
+        {
+            Destroy(gameObject);
         }
     }
 

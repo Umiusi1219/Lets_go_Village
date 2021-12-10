@@ -5,7 +5,7 @@ using UnityEngine;
 enum playerBulletType
 {
     Normal,
-    vehicle,
+    Vehicle,
     Boomerang,
     HAIYORU,
     Mountain,
