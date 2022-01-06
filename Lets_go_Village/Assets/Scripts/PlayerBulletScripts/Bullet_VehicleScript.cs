@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet_VehicleScript : PlayerBulletAdstract
 {
+    [SerializeField] float DownSpeed;
     //íeÇÃë¨ìx
     [SerializeField] float bulletSpeed;
     //é©ìÆè¡ñ≈Ç‹Ç≈ÇÃéûä‘
@@ -60,6 +61,7 @@ public class Bullet_VehicleScript : PlayerBulletAdstract
     {
         if (collision.tag == "Player" )
         {
+            gameObject.transform.position += new Vector3(0, DownSpeed * -1, 0);
             collision.transform.position += new Vector3(bulletSpeed/3, 0, 0);
         }
     }

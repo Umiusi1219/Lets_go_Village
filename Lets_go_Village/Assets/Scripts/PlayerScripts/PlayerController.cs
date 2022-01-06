@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public float m_pjumpPower = 8f; //Set Gravity Scale in Rigidbody2D Component to 5
     public bool m_pDoAttack = true;  //　playerAttack可能かどうか
 
+    [SerializeField] private float pAnimSpeed = 1;
+
     [SerializeField] private float pKnockBackPoewr;
     //ダメージ直後の無敵時間
     [SerializeField] private float invincibleTime;
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
             if(m_pDoAttack)
             {
+                anim.SetFloat("animSpeed",pAnimSpeed);
                 Jump();
                 Run();
                 Attack();
@@ -69,14 +72,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            Restart();
-        }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag == "Map" || other.tag == "AlphaMap"
             || other.tag == "Chest" || other.tag == "VehicleBullet")
@@ -86,6 +84,12 @@ public class PlayerController : MonoBehaviour
             pressSpace = false;
             jumpTime = 0;
         }
+
+        if (other.tag == "water")
+        {
+            pAnimSpeed = 0.5f;
+            rb.gravityScale = 3;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -94,6 +98,12 @@ public class PlayerController : MonoBehaviour
             || other.tag == "Chest" || other.tag == "VehicleBullet")
         {
             anim.SetBool("isJump", true);
+        }
+
+        if (other.tag == "water")
+        {
+            pAnimSpeed = 1;
+            rb.gravityScale = 5;
         }
     }
 
@@ -114,7 +124,7 @@ public class PlayerController : MonoBehaviour
 
     void Run()
     {
-
+        
         Vector3 moveVelocity = Vector3.zero;
         anim.SetBool("isRun", false);
 
@@ -139,7 +149,8 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("isRun", true);
 
         }
-        transform.position += moveVelocity * m_pMovePower * Time.deltaTime;
+        transform.position += moveVelocity * m_pMovePower
+            * pAnimSpeed * Time.deltaTime;
 
     }
     
@@ -188,6 +199,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            anim.SetFloat("animSpeed",0.5f * pAnimSpeed / playerBulletManager.GetComponent
+                <PlayerBulletManagerScript>().m_HaveBulletCoolTime );
             //アタックアニメーションを再生
             anim.SetTrigger("attack");
             //クールタイム
@@ -225,6 +238,7 @@ public class PlayerController : MonoBehaviour
     void Restart()
     {
         m_playerHP = m_playerHPMAX;
+        rb.gravityScale = 5;
         anim.SetTrigger("idle");
         alive = true;
         anim.SetBool("isJump", false);
