@@ -63,7 +63,7 @@
     <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_BoomerangScript.cs" />
     <Compile Include="Assets\Scripts\BulletItemScript\BulletItemScript.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletScripts\HAIYORU_ForwardSensorScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyScript\SkeletonScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript\UndeadScript.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletScripts\HAIYORU_UnderSensorScript.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletScripts\HAIYORU_Manager.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\SimplePlayerController.cs" />
@@ -80,7 +80,13 @@
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\UnityAssets\Gothicvania Cemetery Artwork\about.txt" />
+    <None Include="Assets\Bringer Of Death\License.txt" />
+    <None Include="Assets\UnityAssets\2D Zombie\Shader\Spine-Skeleton.shader" />
+    <None Include="Assets\UnityAssets\EVil Wizard\License.txt" />
+    <None Include="Assets\UnityAssets\2D Zombie\Spine2D Animations Exports\Zombie_Normal.atlas.txt" />
+    <None Include="Assets\UnityAssets\2D Zombie\Unity Native Animations\Zombie_Normal.atlas.txt" />
+    <None Include="Assets\UnityAssets\2D Zombie\ReadMe.txt" />
+    <None Include="Assets\Bringer Of Death\Contact.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -10,11 +10,24 @@ public class MonsterEgg : MonoBehaviour
 
     [SerializeField] GameObject generationMonster;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] GameObject enemysParent;
+
+   
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        enemysParent = GameObject.Find("Enemys");
+
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (generationPossible && collision.tag == "Player")
         {
             Instantiate(generationMonster).transform.position = gameObject.transform.position;
+
             generationPossible = false;
 
             StartCoroutine(MonsterGenerationCoolTime());
