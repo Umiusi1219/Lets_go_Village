@@ -16,7 +16,7 @@ public class Bullet_HAIYORUScript: PlayerBulletAdstract
         haiyoru_manager = transform.root.gameObject;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Enemy" || collision.tag == "Chest" ||
             collision.tag == "Map" || collision.tag == "AlphaMap")

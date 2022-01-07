@@ -40,7 +40,7 @@ public class Bullet_ChikenScript : PlayerBulletAdstract
         rbody2.AddForce(impulseFoce, ForceMode2D.Impulse);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Enemy" || collision.tag == "Chest" ||
              collision.tag == "Map" || collision.tag == "AlphaMap")

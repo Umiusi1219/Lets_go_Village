@@ -48,14 +48,6 @@ public class Bullet_VehicleScript : PlayerBulletAdstract
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Enemy" || collision.tag == "Chest" ||
-             collision.tag == "Map" || collision.tag == "AlphaMap")
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -64,14 +56,13 @@ public class Bullet_VehicleScript : PlayerBulletAdstract
             gameObject.transform.position += new Vector3(0, DownSpeed * -1, 0);
             collision.transform.position += new Vector3(bulletSpeed/3, 0, 0);
         }
+
+        if (collision.tag == "Enemy" || collision.tag == "Chest" ||
+     collision.tag == "Map" || collision.tag == "AlphaMap")
+        {
+            Destroy(gameObject);
+        }
     }
-
-
-
-    //public float GetBulletSpped()S
-    //{
-    //    return bulletSpeed;
-    //}
 
     public override float GetCooltime()
     {

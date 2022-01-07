@@ -120,7 +120,7 @@ MonoBehaviour:
   bulletSpeed: 0.22
   bulletAliveTime: 5
   m_BulletCoolTime: 0.5
-  bulletPower: 0
+  bulletPower: 1
 --- !u!70 &2671391274037548785
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -5,15 +5,10 @@ using UnityEngine;
 public class PlayerBulletManagerScript : MonoBehaviour
 {
     [SerializeField]
-    GameObject player;
-    [SerializeField]
     List<GameObject> playerBulletList;
-    [SerializeField]
-    GameObject playerBulletUiList;
 
     public GameObject m_PlayerBullet;
     public float m_HaveBulletCoolTime;
-
 
 
     private void Start()
@@ -21,7 +16,6 @@ public class PlayerBulletManagerScript : MonoBehaviour
         //デフォルトのBulletを設定
         SetPlayerBullet(0);
     }
-
 
     public void SetPlayerBullet(int num)
     {

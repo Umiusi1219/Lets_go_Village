@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UndeadScript : MonoBehaviour
+public class UndeadScript : EnemyAdstract
 {
     [SerializeField]
     private GameObject player;
 
     [SerializeField]
     private float undeadMovePower;
+
+    [SerializeField]
+    private int undeadPower;
 
     [SerializeField]
     float toPlayerDistance;
@@ -34,6 +37,10 @@ public class UndeadScript : MonoBehaviour
         {
             toPlayerDistance = player.transform.position.x - gameObject.transform.position.x;
             Run();
+            if (50 <= toPlayerDistance)
+            {
+                dead();
+            };
         }
     }
 
@@ -61,6 +68,13 @@ public class UndeadScript : MonoBehaviour
 
     }
 
+    void dead()
+    {
+        gameObject.GetComponent<Animator>().SetBool("ded", true);
+        gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+        StartCoroutine(DethTime());
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -68,16 +82,21 @@ public class UndeadScript : MonoBehaviour
         {
             undeadDed = true;
 
-            gameObject.GetComponent<Animator>().SetBool("ded", true);
-            gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
-            gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-            StartCoroutine(DetTime());
+            dead();
         }
     }
 
-    IEnumerator DetTime()
+
+
+    IEnumerator DethTime()
     {
         yield return new WaitForSeconds(1);
         Destroy(gameObject.transform.parent.gameObject);
+    }
+
+
+    public override int GetEnemyPower()
+    {
+        return undeadPower;
     }
 }

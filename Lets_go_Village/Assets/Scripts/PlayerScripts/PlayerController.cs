@@ -66,59 +66,12 @@ public class PlayerController : MonoBehaviour
                 Run();
                 Attack();
             }
-            if (m_playerHP == 0)
+            if (m_playerHP <= 0)
             {
                 Die();
             }
         }
 
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if(other.tag == "Map" || other.tag == "AlphaMap"
-            || other.tag == "Chest" || other.tag == "VehicleBullet")
-        {
-            anim.SetBool("isJump", false);
-            keepPressingSpace = false;
-            pressSpace = false;
-            jumpTime = 0;
-        }
-
-        if (other.tag == "water")
-        {
-            pAnimSpeed = 0.5f;
-            rb.gravityScale = 3;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Map" || other.tag == "AlphaMap"
-            || other.tag == "Chest" || other.tag == "VehicleBullet")
-        {
-            anim.SetBool("isJump", true);
-        }
-
-        if (other.tag == "water")
-        {
-            pAnimSpeed = 1;
-            rb.gravityScale = 5;
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy" && possibleHurt)
-        {
-             Hurt();
-             StartCoroutine(HurtCoolTime());
-        }
-
-        if (collision.gameObject.tag == "DeathDed" && alive)
-        {
-            Die();
-        }
     }
 
 
@@ -206,16 +159,15 @@ public class PlayerController : MonoBehaviour
             //クールタイム
             StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent
                 <PlayerBulletManagerScript>().m_HaveBulletCoolTime));
-
         }
     }
 
     //HPを減らしてノックバック
-    void Hurt()
+    void Hurt( int enemyPowerNum)
     {
         if (0 < m_playerHP)
         {
-            m_playerHP--;
+            m_playerHP -= enemyPowerNum;
             anim.SetTrigger("hurt");
             rb.AddForce(new Vector2(pKnockBackPoewr * m_pDirection, 1f), ForceMode2D.Impulse);
         }
@@ -254,6 +206,61 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.position.y + 1.5f, 0.0f), Quaternion.identity);
     }
 
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Map" || other.tag == "AlphaMap"
+            || other.tag == "Chest" || other.tag == "VehicleBullet")
+        {
+            anim.SetBool("isJump", false);
+            keepPressingSpace = false;
+            pressSpace = false;
+            jumpTime = 0;
+        }
+
+        if (other.tag == "water")
+        {
+            pAnimSpeed = 0.5f;
+            rb.gravityScale = 3;
+        }
+
+        if (other.tag == "Enemy" && possibleHurt)
+        {
+            Hurt(other.gameObject.GetComponent<EnemyAdstract>().GetEnemyPower());
+            StartCoroutine(HurtCoolTime());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Map" || other.tag == "AlphaMap"
+            || other.tag == "Chest" || other.tag == "VehicleBullet")
+        {
+            anim.SetBool("isJump", true);
+        }
+
+        if (other.tag == "water")
+        {
+            pAnimSpeed = 1;
+            rb.gravityScale = 5;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && possibleHurt)
+        {
+            Hurt(collision.gameObject.GetComponent<EnemyAdstract>().GetEnemyPower());
+            StartCoroutine(HurtCoolTime());
+        }
+
+        if (collision.gameObject.tag == "DeathDed" && alive)
+        {
+            Die();
+        }
+    }
+
+
     //プレイヤーのアタックを使用しているBulletで決めてあるCoolTime分使用不可にする関数
     IEnumerator AtaackCoolTime(float Time)
     {
@@ -274,12 +281,10 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
     IEnumerator HurtCoolTime()
     {
         //playerがダメージを受けないようにする
         possibleHurt = false;
-
 
         //使用しているBulletのクールタイム分停止
         yield return new WaitForSeconds(invincibleTime);
