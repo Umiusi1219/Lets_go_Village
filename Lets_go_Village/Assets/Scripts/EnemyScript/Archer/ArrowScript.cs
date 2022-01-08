@@ -37,7 +37,7 @@ public class ArrowScript : EnemyAdstract
 
         rbody2d = gameObject.GetComponent<Rigidbody2D>();
 
-        rbody2d.AddForce( new Vector3(shootPowerVecter.x*toPlayerDistance, shootPowerVecter.y -transform.position.y
+        rbody2d.AddForce( new Vector3(shootPowerVecter.x * toPlayerDistance, shootPowerVecter.y -transform.position.y
             ,0) , ForceMode2D.Impulse);
     }
 

@@ -47,6 +47,8 @@ public class GolemScript : EnemyAdstract
         gameObject.transform.position += bronPosAdd;
 
         player = GameObject.Find("WizardVariant");
+
+        gameObject.GetComponent<Animator>().SetTrigger("bron");
     }
 
     // Update is called once per frame
@@ -62,9 +64,9 @@ public class GolemScript : EnemyAdstract
                 dead();
             }
 
-            if (doAttackRange < Mathf.Abs(toPlayerDistance) && doAttack)
+            if (doAttackRange > Mathf.Abs(toPlayerDistance) && doAttack)
             {
-                StartCoroutine(AttackTime());
+                Attack();
             }
         }
     }
@@ -134,7 +136,7 @@ public class GolemScript : EnemyAdstract
     IEnumerator AttackTime()
     {
         doAttack = false;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         yield return new WaitForSeconds(0.2f);
         gameObject.GetComponent<BoxCollider2D>().enabled = false;

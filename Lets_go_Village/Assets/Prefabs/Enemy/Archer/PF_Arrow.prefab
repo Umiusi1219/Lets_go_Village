@@ -137,4 +137,4 @@ MonoBehaviour:
   arrowPower: 1
   toPlayerDistance: 0
   player: {fileID: 0}
-  shootPowerVecter: {x: 0.7, y: 7, z: 0}
+  shootPowerVecter: {x: 0.49, y: 7, z: 0}

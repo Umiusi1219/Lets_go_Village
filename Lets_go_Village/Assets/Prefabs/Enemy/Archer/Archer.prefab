@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   archerHp: 1
   shootCoolTime: 2
-  doAttackRange: 20
+  doAttackRange: 17
   archerPower: 1
   archerDed: 0
   doShoot: 0
