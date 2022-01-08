@@ -28,6 +28,8 @@ public class ArcherScript : EnemyAdstract
         doShoot = true;
 
         player = GameObject.Find("WizardVariant");
+
+        gameObject.transform.position += new Vector3(0,2,0);
     }
 
     // Update is called once per frame
