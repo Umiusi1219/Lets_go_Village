@@ -96,6 +96,15 @@ public class BatScript : EnemyAdstract
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Map" || collision.tag == "VehicleBullet")
+        {
+            dead();
+        }
+    }
+
+
     IEnumerator DethTime()
     {
         yield return new WaitForSeconds(0.7f);

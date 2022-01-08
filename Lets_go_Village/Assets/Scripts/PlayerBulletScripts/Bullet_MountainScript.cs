@@ -16,8 +16,7 @@ public class Bullet_MountainScript : PlayerBulletAdstract
 
     [SerializeField] Vector2 impulseFoce;
 
-    //’e‚Ì¶‘¶ŠÔ‚ğ‹L‰¯‚·‚é•Ï”
-    private float elapsedTime = 0;
+
 
     private void Start()
     {
