@@ -83,16 +83,17 @@
     <Compile Include="Assets\Scripts\SceneManagerScript\SceneManagerScript.cs" />
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\Archer\ArrowScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript\BatScript.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Bringer Of Death\License.txt" />
-    <None Include="Assets\Hero and Opponents\license.txt" />
+    <None Include="Assets\UnityAssets\Bringer Of Death\License.txt" />
+    <None Include="Assets\UnityAssets\Hero and Opponents\license.txt" />
     <None Include="Assets\UnityAssets\2D Zombie\Shader\Spine-Skeleton.shader" />
     <None Include="Assets\UnityAssets\EVil Wizard\License.txt" />
     <None Include="Assets\UnityAssets\2D Zombie\Spine2D Animations Exports\Zombie_Normal.atlas.txt" />
     <None Include="Assets\UnityAssets\2D Zombie\Unity Native Animations\Zombie_Normal.atlas.txt" />
     <None Include="Assets\UnityAssets\2D Zombie\ReadMe.txt" />
-    <None Include="Assets\Bringer Of Death\Contact.txt" />
+    <None Include="Assets\UnityAssets\Bringer Of Death\Contact.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -69,7 +69,7 @@ public class ArcherScript : EnemyAdstract
 
     public void Attack()
     {
-        gameObject.GetComponent<Animator>().SetTrigger("attack");
+        gameObject.GetComponent<Animator>().SetTrigger("shoot");
         StartCoroutine(AttackTime());
     }
 
@@ -100,9 +100,9 @@ public class ArcherScript : EnemyAdstract
     IEnumerator AttackTime()
     {
         doShoot = false;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.4f);
         Instantiate(shootObj).transform.position = gameObject.transform.position;
-
+        
         yield return new WaitForSeconds(shootCoolTime);
         doShoot = true;
     }
