@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
     public int m_playerHP = 3;
     public int m_playerHPMAX = 3;
     public float m_pMovePower = 0.5f;
-    public float m_pjumpPower = 8f; //Set Gravity Scale in Rigidbody2D Component to 5
+    public float m_pjumpPower ; //Set Gravity Scale in Rigidbody2D Component to 5
+     float m_pjumpPowerMax; //Set Gravity Scale in Rigidbody2D Component to 5
     public bool m_pDoAttack = true;  //Å@playerAttackâ¬î\Ç©Ç«Ç§Ç©
 
     [SerializeField] private float pAnimSpeed = 1;
@@ -45,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        m_pjumpPowerMax = m_pjumpPower;
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         Restart();
@@ -70,8 +73,8 @@ public class PlayerController : MonoBehaviour
             {
                 Die();
             }
-        }
 
+        }
     }
 
 
@@ -80,7 +83,6 @@ public class PlayerController : MonoBehaviour
         
         Vector3 moveVelocity = Vector3.zero;
         anim.SetBool("isRun", false);
-
 
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
@@ -110,42 +112,91 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !anim.GetBool("isJump") && !pressSpace)
+
+        if (pAnimSpeed == 1)
         {
-            isJumping = true;
-            anim.SetBool("isJump", true);
-            pressSpace = true;
+            m_pjumpPower = m_pjumpPowerMax;
+
+            if (Input.GetKeyDown(KeyCode.Space) && !anim.GetBool("isJump") && !pressSpace)
+            {
+                rb.AddForce(new Vector3(0, m_pjumpPower, 0), ForceMode2D.Impulse);
+                isJumping = true;
+                anim.SetBool("isJump", true);
+                pressSpace = true;
+            }
+            else if ((Input.GetKey(KeyCode.Space) && jumpTime < jumpTimeLimit) && pressSpace)
+            {
+                jumpTime += Time.deltaTime;
+
+                isJumping = true;
+                keepPressingSpace = true;
+            }
+            else if (Input.GetKeyUp(KeyCode.Space))
+            {
+                keepPressingSpace = false;
+                pressSpace = false;
+            }
+
+            if (!isJumping || jumpTime > jumpTimeLimit || !keepPressingSpace)
+            {
+                return;
+            }
+
+            rb.velocity = Vector2.zero;
+
+            Vector2 jumpVelocity = new Vector2(0, m_pjumpPower);
+            rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
+
+            if (keepPressingSpace)
+            {
+                Vector2 jumpVelocity2 = new Vector2(0, ((m_pjumpPower / 160) * jumpTime));
+                rb.AddForce(jumpVelocity2 * pAnimSpeed, ForceMode2D.Impulse);
+            }
+
+            isJumping = false;
         }
-        else if ((Input.GetKey(KeyCode.Space) && jumpTime < jumpTimeLimit) && pressSpace)
+        else
         {
-            jumpTime += Time.deltaTime;
+            m_pjumpPower = m_pjumpPowerMax/1.5f;
 
-            isJumping = true;
-            keepPressingSpace = true;
+            if (Input.GetKeyDown(KeyCode.Space) && !anim.GetBool("isJump") && !pressSpace)
+            {
+                rb.AddForce(new Vector3(0, m_pjumpPower,0), ForceMode2D.Impulse);
+                isJumping = true;
+                anim.SetBool("isJump", true);
+                pressSpace = true;
+            }
+            else if ((Input.GetKey(KeyCode.Space) && jumpTime < (jumpTimeLimit * 2.5)) && pressSpace)
+            {
+                jumpTime += Time.deltaTime;
+
+                isJumping = true;
+                keepPressingSpace = true;
+            }
+            else if (Input.GetKeyUp(KeyCode.Space))
+            {
+                keepPressingSpace = false;
+                pressSpace = false;
+            }
+
+            if (!isJumping || jumpTime > (jumpTimeLimit*2.5) || !keepPressingSpace)
+            {
+                return;
+            }
+
+            rb.velocity = Vector2.zero;
+
+            Vector2 jumpVelocity = new Vector2(0, m_pjumpPower);
+            rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
+
+            if (keepPressingSpace)
+            {
+                Vector2 jumpVelocity2 = new Vector2(0, ((m_pjumpPower / 160) * jumpTime) );
+                rb.AddForce(jumpVelocity2 * pAnimSpeed, ForceMode2D.Impulse);
+            }
+
+            isJumping = false;
         }
-        else if(Input.GetKeyUp(KeyCode.Space))
-        {
-            keepPressingSpace = false;
-            pressSpace = false;
-        }
-
-        if (!isJumping || jumpTime > jumpTimeLimit || !keepPressingSpace)
-        {
-            return;
-        }
-
-        rb.velocity = Vector2.zero;
-
-        Vector2 jumpVelocity = new Vector2(0, m_pjumpPower);
-        rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
-
-        if(keepPressingSpace)
-        {
-            Vector2 jumpVelocity2 = new Vector2(0, (m_pjumpPower / 160)* jumpTime);
-            rb.AddForce(jumpVelocity2, ForceMode2D.Impulse);
-        }
-
-        isJumping = false;
     }
 
     void Attack()
@@ -207,7 +258,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Map" || other.tag == "AlphaMap"
             || other.tag == "Chest" || other.tag == "VehicleBullet")
@@ -228,6 +279,7 @@ public class PlayerController : MonoBehaviour
         {
             Hurt(other.gameObject.GetComponent<EnemyAdstract>().GetEnemyPower());
             StartCoroutine(HurtCoolTime());
+            Debug.Log(other.name);
         }
     }
 
@@ -243,7 +295,11 @@ public class PlayerController : MonoBehaviour
         {
             pAnimSpeed = 1;
             rb.gravityScale = 5;
+            
+
+            jumpTime = 5;
         }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
