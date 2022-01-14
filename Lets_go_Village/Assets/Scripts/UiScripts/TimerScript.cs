@@ -9,6 +9,8 @@ public class TimerScript : MonoBehaviour
 
     float m_TimelimitMAX;
 
+    [SerializeField] GameObject player;
+
     void Start()
     {
         m_TimelimitMAX = m_Timelimit;
@@ -28,6 +30,8 @@ public class TimerScript : MonoBehaviour
         else
         {
             gameObject.GetComponent<Text>().text = "Time Over";
+
+            player.GetComponent<PlayerController>().Die();
         }
     }
 

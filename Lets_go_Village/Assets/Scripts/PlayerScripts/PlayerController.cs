@@ -226,7 +226,7 @@ public class PlayerController : MonoBehaviour
         playerHpUi.GetComponent<PlayerHPScript>().ChangePlayerHpUi(m_playerHPMAX, m_playerHP);
     }
 
-    void Die()
+    public void Die()
     {
         if(alive)
         {
