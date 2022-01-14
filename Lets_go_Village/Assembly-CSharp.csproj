@@ -55,7 +55,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_NormalScript.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\Golem\GolemScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript\Magician\MagicianSensorScript.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletScripts\PlayerBulletManagerScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript\Magician\MagicianScript.cs" />
     <Compile Include="Assets\Scripts\UiScripts\BlackoutScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletScripts\Bullet_HAIYORUScript.cs" />
@@ -85,8 +87,6 @@
     <Compile Include="Assets\UnityAssets\Wizard - 2D Character\Demo\WizDemo1.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\Archer\ArrowScript.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\FishScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyScript\Magician\MagicianScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyScript\Magician\MagicianSensorScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityAssets\Bringer Of Death\License.txt" />

@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        Restart();
+        //Restart();
 
         playerParent.transform.position = generatPoints[CheckPointScript.m_nowCheckpoint];
     }

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magicianHp: 3
-  magicianPower: 0
+  magicianPower: 1
   magicianDed: 0
   doTeleport: 0
   teleportCoolTime: 3

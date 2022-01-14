@@ -7,6 +7,11 @@ public class ChestGoldScript : MonoBehaviour
     [SerializeField]
     GameObject Iteme;
 
+    [SerializeField]
+    List<GameObject> ItemeList;
+
+    [SerializeField] int randNum;
+
     private Animator chestAnim;
 
     private BoxCollider2D chestDollider2D;
@@ -26,11 +31,24 @@ public class ChestGoldScript : MonoBehaviour
             chestAnim.SetBool("Open", true);
             chestDollider2D.enabled = false;
 
-            StartCoroutine(ItemGenerationTime());
+            if (Iteme != null)
+            {
+                StartCoroutine(ItemGenerationTime(Iteme));
+            }
+            else if(ItemeList[0] != null)
+            {
+                randNum = Random.Range(0, ItemeList.Count);
+                StartCoroutine(ItemGenerationTime(ItemeList[randNum]));
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
-    IEnumerator ItemGenerationTime()
+
+    IEnumerator ItemGenerationTime(GameObject GeneratObj)
     {
         yield return new WaitForSeconds(generationTime);
         Instantiate(Iteme).transform.position = new Vector3(gameObject.transform.position.x,gameObject.transform.position.y+1,0) ;

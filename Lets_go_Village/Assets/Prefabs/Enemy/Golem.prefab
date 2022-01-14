@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  golemMovePower: 0.5
+  golemMovePower: 0.7
   golemHp: 6
   doAttackRange: 3
   doAttack: 0
