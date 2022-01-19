@@ -209,7 +209,7 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("attack");
             //クールタイム
             StartCoroutine(AtaackCoolTime(playerBulletManager.GetComponent
-                <PlayerBulletManagerScript>().m_HaveBulletCoolTime));
+                <PlayerBulletManagerScript>().m_HaveBulletCoolTime / pAnimSpeed));
         }
     }
 

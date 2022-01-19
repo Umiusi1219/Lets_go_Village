@@ -1,0 +1,1086 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.5f1 (e2c53f129de5) revision 14861631'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1466; Version 2009; 64bit' Language: 'ja' Physical Memory: 32686 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\unity\2020.2.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ikaya/Documents/GitHub/Lets_go_Village/Lets_go_Village
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58599
+Successfully changed project path to: C:/Users/ikaya/Documents/GitHub/Lets_go_Village/Lets_go_Village
+C:/Users/ikaya/Documents/GitHub/Lets_go_Village/Lets_go_Village
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 39.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.5f1 (e2c53f129de5)
+[Subsystems] Discovering subsystems at path D:/unity/2020.2.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ikaya/Documents/GitHub/Lets_go_Village/Lets_go_Village/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:   
+    VRAM:     8031 MB
+    Driver:   27.21.14.5751
+Initialize mono
+Mono path[0] = 'D:/unity/2020.2.5f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/2020.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/unity/2020.2.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/2020.2.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/unity/2020.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000946 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 39.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000810 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 36.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.835 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1997 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.9 MB.
+System memory in use after: 95.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2447.
+Total: 2.147900 ms (FindLiveObjects: 0.228600 ms CreateObjectMapping: 0.089800 ms MarkObjects: 1.808300 ms  DeleteObjects: 0.020300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1b054b635faec95da9ee111066f213') in 0.092343 seconds
+  Import took 0.095804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.278429 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddec6a597954adb085947ca489ef236') in 0.009788 seconds
+  Import took 0.013045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.060676 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e1ed42976e14a8a3a0a0a5c73ff287') in 0.014431 seconds
+  Import took 0.018007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.708090 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93b18fd1c5b8597017091884a64e477') in 0.009047 seconds
+  Import took 0.012585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.243740 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba8cd3819211ac349001b0c5e93fb8a') in 0.010919 seconds
+  Import took 0.014677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.107004 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23bbe5059f1c19af21c0b730f60adaee') in 0.010034 seconds
+  Import took 0.013638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.212104 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186c035abd3dce7852b93524c0d094f9') in 0.008937 seconds
+  Import took 0.012606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.601163 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1327bd7ef5830c05003a5b872ef117da') in 0.007941 seconds
+  Import took 0.011715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.478766 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485ad995aaeec9115804e4963103c9ab') in 0.010217 seconds
+  Import took 0.025465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.818014 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4744b92f5e963b042421e3bf98d417f0') in 0.009800 seconds
+  Import took 0.013266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.114680 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e0aafb5d80e0e5efdc928321ff9f3e') in 0.008838 seconds
+  Import took 0.012525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.300855 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afebd31f5fb8d9bbd9ac3b6e5e8ac9d1') in 0.009823 seconds
+  Import took 0.013461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.331265 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22fbf8c5b9b570061d0d4420002a5db') in 0.009358 seconds
+  Import took 0.012839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.250780 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9b974c31d95ac93981d97f6406a9c6') in 0.009365 seconds
+  Import took 0.013228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.831631 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f222a72d93b65c05d13ef9e2d2277596') in 0.008693 seconds
+  Import took 0.012997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.496810 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a501de9181c3e00d3cc9aad91f530952') in 0.009216 seconds
+  Import took 0.014389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.513687 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b895078121fe59245166812efc91fc') in 0.011472 seconds
+  Import took 0.014961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.078797 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d72f37abd7d8892c2a606fb0c294b2') in 0.009134 seconds
+  Import took 0.013022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.584211 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d4a1b6f2a15a75e197972c277a5ae8') in 0.010051 seconds
+  Import took 0.013669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.606219 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde155cbc4ffb0058d2f718563a3ec83') in 0.008738 seconds
+  Import took 0.013133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.511330 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68155f9f213c42a5eb58630a96c3da7') in 0.009003 seconds
+  Import took 0.012708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.712782 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a775e11fd4efd8dd000235e4255d04f') in 0.008642 seconds
+  Import took 0.012332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.037176 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2ff7cb4a94183166665a048e4c51c9') in 0.008511 seconds
+  Import took 0.012477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.917725 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4bbe55261dfc604b83042a5f3a2e80') in 0.010331 seconds
+  Import took 0.013687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.046494 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e939765a90ac6eee685253b639a362') in 0.008232 seconds
+  Import took 0.011925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.097313 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584c2288f330f28b9dab30ac32b87d99') in 0.008356 seconds
+  Import took 0.011782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.829284 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3779bab62b073c5adb0beb957ff939') in 0.011371 seconds
+  Import took 0.015011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.218271 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f6bf9a7e506d7cf6a0a8e5484c3a70') in 0.009120 seconds
+  Import took 0.012546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.889520 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '152abb05ef51563adf645969402400af') in 0.010842 seconds
+  Import took 0.014297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.279654 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8f6e6fc157ea6e56e8be1b9215d57c') in 0.009707 seconds
+  Import took 0.013437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.807871 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80121b9bd4724ba52748d43c6a33c619') in 0.009768 seconds
+  Import took 0.013257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.702888 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e40d54221cb66036beef8a44639185') in 0.009986 seconds
+  Import took 0.013368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.892654 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7ce60f743ee9a77c85f5aba160b481') in 0.009726 seconds
+  Import took 0.013315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.273651 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a09942c6983e2fa863a52a97f7c47fbc') in 0.010036 seconds
+  Import took 0.013549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.716864 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_arm_left_n.png
+  artifactKey: Guid(35b4c1da3211c7a438ac6bff0a57b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_arm_left_n.png using Guid(35b4c1da3211c7a438ac6bff0a57b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87c78e2424c95c08253e529a9946466') in 0.098412 seconds
+  Import took 0.101614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A3.png
+  artifactKey: Guid(41a89ec87611d144ba345dde9f14eb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A3.png using Guid(41a89ec87611d144ba345dde9f14eb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be96945ece1617d20ac34c346180db7d') in 0.019552 seconds
+  Import took 0.022958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_arm_left_n.png
+  artifactKey: Guid(35b4c1da3211c7a438ac6bff0a57b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_arm_left_n.png using Guid(35b4c1da3211c7a438ac6bff0a57b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87c78e2424c95c08253e529a9946466') in 0.012412 seconds
+  Import took 0.015210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Attack.png
+  artifactKey: Guid(d6b8c791d8089b44a9a8c5a7423bd180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Attack.png using Guid(d6b8c791d8089b44a9a8c5a7423bd180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27b22c22edd50aacf0cbcc9e74263ad') in 0.040317 seconds
+  Import took 0.044248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A2.png
+  artifactKey: Guid(9351e6ac189df5a409a44e7b19fb1308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A2.png using Guid(9351e6ac189df5a409a44e7b19fb1308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7afd50e845fb6db82c37221dc261dc') in 0.016257 seconds
+  Import took 0.019151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Attack1.png
+  artifactKey: Guid(ce3326307819d6e4497038e63e070108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Attack1.png using Guid(ce3326307819d6e4497038e63e070108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a9d411c5356e476a02f3ca71afcbed') in 0.038427 seconds
+  Import took 0.041871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000574 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B5.png
+  artifactKey: Guid(027906b99dfaf3841b34ff09f2de01af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B5.png using Guid(027906b99dfaf3841b34ff09f2de01af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a783cdae94c19aeb29d7c66e6dd6a0') in 0.016848 seconds
+  Import took 0.020623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B4.png
+  artifactKey: Guid(e1fdf1a4ba6958647bcd945873ac6e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B4.png using Guid(e1fdf1a4ba6958647bcd945873ac6e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b67d7b5effeef0c7fb50103818c8d9b') in 0.017567 seconds
+  Import took 0.021098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_head_n.png
+  artifactKey: Guid(ca06de5fb36229641bcd248a371195f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_head_n.png using Guid(ca06de5fb36229641bcd248a371195f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd84565b42b218a98d184e0f686331f4') in 0.024789 seconds
+  Import took 0.027682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_arm_right_n.png
+  artifactKey: Guid(4a4e37fcbbe7aa640b815ae4fcc27e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_arm_right_n.png using Guid(4a4e37fcbbe7aa640b815ae4fcc27e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bd923b5f1a84e8270cc882b9f1aa49') in 0.024198 seconds
+  Import took 0.027322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B1.png
+  artifactKey: Guid(490d52efbafe6184d8ff89ef9677b3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B1.png using Guid(490d52efbafe6184d8ff89ef9677b3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee045370f1945baa186958fa2e965f3') in 0.018706 seconds
+  Import took 0.021661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A4.png
+  artifactKey: Guid(5582bd9b3b2d30041aa476896aca6576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A4.png using Guid(5582bd9b3b2d30041aa476896aca6576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899467de8487b1fa8f2d1f1f63769f1f') in 0.015815 seconds
+  Import took 0.018614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A6.png
+  artifactKey: Guid(bad448c2c13a09947a747764808348b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A6.png using Guid(bad448c2c13a09947a747764808348b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79858dcc8fd5d1d7f48c3aa6c2aea73f') in 0.015227 seconds
+  Import took 0.017861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B3.png
+  artifactKey: Guid(cf65ff94d9a87244587dbc101a5d0a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B3.png using Guid(cf65ff94d9a87244587dbc101a5d0a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad8893c1e2f89eafa67ed10ad3f9623') in 0.015716 seconds
+  Import took 0.018478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A1.png
+  artifactKey: Guid(5b4b5bb559abd044791dedff1b79315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A1.png using Guid(5b4b5bb559abd044791dedff1b79315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44decf0a606965b6bc6d29f4d5017d09') in 0.010178 seconds
+  Import took 0.012883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_leg_right_n.png
+  artifactKey: Guid(8afc32a443237b24aa361efc7b58e80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_leg_right_n.png using Guid(8afc32a443237b24aa361efc7b58e80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0412b775cb0470090e9afff53c0bd22c') in 0.020794 seconds
+  Import took 0.023734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A5.png
+  artifactKey: Guid(ad356ffa6d5fb044faa7b7a6441a601b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-A5.png using Guid(ad356ffa6d5fb044faa7b7a6441a601b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add2ec672b71df83309ef845ff522073') in 0.014479 seconds
+  Import took 0.016952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B2.png
+  artifactKey: Guid(ed9b567ed7c32dc4cbcac37af8841754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B2.png using Guid(ed9b567ed7c32dc4cbcac37af8841754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e828e34cf0f9d38e11b579271c485f4') in 0.014430 seconds
+  Import took 0.017003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_body_n.png
+  artifactKey: Guid(d7c82189f43fd9a49a35ad556937b500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/01_body_n.png using Guid(d7c82189f43fd9a49a35ad556937b500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299c0ce07163d69156115eb0fde57645') in 0.021663 seconds
+  Import took 0.024682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Attack2.png
+  artifactKey: Guid(dd255f029b1eb1347b77fb335d97ea38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Attack2.png using Guid(dd255f029b1eb1347b77fb335d97ea38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becb549425d15e0e8609947830daf377') in 0.034048 seconds
+  Import took 0.036747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B6.png
+  artifactKey: Guid(5106821bde0c0d5459d9016d6425abab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/attack-B6.png using Guid(5106821bde0c0d5459d9016d6425abab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b310fa88c3c9ed1fba278cc0a9ebe294') in 0.018156 seconds
+  Import took 0.020740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.107963 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-1.png
+  artifactKey: Guid(e1c6bba8449913648a8ea6990d4a9060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-1.png using Guid(e1c6bba8449913648a8ea6990d4a9060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546a1ae28ccb01cd00d97f1a0dc24900') in 0.016690 seconds
+  Import took 0.020448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-3.png
+  artifactKey: Guid(3d7e3a440047dce44be5a1a8789481a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-3.png using Guid(3d7e3a440047dce44be5a1a8789481a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1fed5d01e87f66d9141e62ba442a6e') in 0.020606 seconds
+  Import took 0.024248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-3.png
+  artifactKey: Guid(38ead65714fcf4c52b5b031a59cb4a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-3.png using Guid(38ead65714fcf4c52b5b031a59cb4a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841272195ebe513111a7674e55f9e143') in 0.014580 seconds
+  Import took 0.018068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-5.png
+  artifactKey: Guid(7822739229de84cdfba177d2ae9b4529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-5.png using Guid(7822739229de84cdfba177d2ae9b4529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c77f5ae402e6d3b130bf239c8de6bf') in 0.015996 seconds
+  Import took 0.019800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Flight.png
+  artifactKey: Guid(6d7cd4f7505dc674c891ca8946cfd98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Flight.png using Guid(6d7cd4f7505dc674c891ca8946cfd98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01381831d961b0bee49817a6f6974bf7') in 0.031028 seconds
+  Import took 0.034395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-4.png
+  artifactKey: Guid(c81d4f5e629154ef9bf7c5b3cad8f9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-4.png using Guid(c81d4f5e629154ef9bf7c5b3cad8f9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43c9fc3acd9ee1f886f0335c3b342ff') in 0.014808 seconds
+  Import took 0.018248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-4.png
+  artifactKey: Guid(2681b9ea165818a40a0d60507953ce71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-4.png using Guid(2681b9ea165818a40a0d60507953ce71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd52a11a11f0bb1958ea547daad220c') in 0.015890 seconds
+  Import took 0.018615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-3.png
+  artifactKey: Guid(6c4b72a04c613ee40a3d3ce5740fc370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-3.png using Guid(6c4b72a04c613ee40a3d3ce5740fc370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441499490f2a2104f8a65dda72f85b35') in 0.017309 seconds
+  Import took 0.020157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Files/images/leg_left-7.png
+  artifactKey: Guid(7733cb71e24e6e842b9e09c74d63bfca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Files/images/leg_left-7.png using Guid(7733cb71e24e6e842b9e09c74d63bfca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8974bd73184ea20ef5f8c90491e280a4') in 0.017596 seconds
+  Import took 0.020386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Move.png
+  artifactKey: Guid(a48b0037be4645c4c913e26853a053cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Move.png using Guid(a48b0037be4645c4c913e26853a053cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3f05c392260023792b80d18317e6d2') in 0.032358 seconds
+  Import took 0.035574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-2.png
+  artifactKey: Guid(3b9b7ec69ebddd747b6411cf1b52570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-2.png using Guid(3b9b7ec69ebddd747b6411cf1b52570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b654d035fd1792b6146df68ed153ba3f') in 0.018015 seconds
+  Import took 0.020869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-1.png
+  artifactKey: Guid(74a19e90cfc0c443d9b91064e41bf9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-1.png using Guid(74a19e90cfc0c443d9b91064e41bf9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477a4c8ed203051d14495a5668123f51') in 0.014061 seconds
+  Import took 0.017128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Idle.png
+  artifactKey: Guid(6fc66c021eec74942b4e71a3fde4dc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Idle.png using Guid(6fc66c021eec74942b4e71a3fde4dc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366a47cc6d4fdd661371f7d7b53be369') in 0.025686 seconds
+  Import took 0.028489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-8.png
+  artifactKey: Guid(a7fc8ff0af10ed84ebafa42ad6960f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-8.png using Guid(a7fc8ff0af10ed84ebafa42ad6960f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de3e19e8408a84d8424a560efb96a1b') in 0.015751 seconds
+  Import took 0.019015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-12.png
+  artifactKey: Guid(1c19c834d22bbda4f8269585a89f41fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-12.png using Guid(1c19c834d22bbda4f8269585a89f41fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017659b5412cc06caca8fb511c660109') in 0.015300 seconds
+  Import took 0.018175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-11.png
+  artifactKey: Guid(14b9b934bb01b7b428cc9adcf3fb723f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-11.png using Guid(14b9b934bb01b7b428cc9adcf3fb723f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73b5d9dfcd337c1aaa197eebb82fddf') in 0.016526 seconds
+  Import took 0.019572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/idle-1.png
+  artifactKey: Guid(eb3711790d9a7304992355d8f5f9eeae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/idle-1.png using Guid(eb3711790d9a7304992355d8f5f9eeae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8c8f6f3dd852b49b9d6cbcd4a78b97') in 0.016219 seconds
+  Import took 0.019424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-4.png
+  artifactKey: Guid(36b44d6a8d2980d4d89ff6330f2078cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-4.png using Guid(36b44d6a8d2980d4d89ff6330f2078cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162f080df67fbfa474da79cb8e59cca3') in 0.014733 seconds
+  Import took 0.018050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Death.png
+  artifactKey: Guid(9d1b202d2fb768a45a36389da710721f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Death.png using Guid(9d1b202d2fb768a45a36389da710721f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c747f7de0d635b032615e5f4d8b0e3d') in 0.026386 seconds
+  Import took 0.029157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-5.png
+  artifactKey: Guid(0872883f26db6b846bf3b9427f298aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-5.png using Guid(0872883f26db6b846bf3b9427f298aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66db31ca77998b1b4fb4511bd1ba0cc2') in 0.016914 seconds
+  Import took 0.020279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Death.png
+  artifactKey: Guid(b9517addf15136e47a89337d912454b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Death.png using Guid(b9517addf15136e47a89337d912454b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe9867d1c09ec13aea480437e1631dd') in 0.023799 seconds
+  Import took 0.026687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Take Hit.png
+  artifactKey: Guid(244d2b7af82202d4daae9b898fd596d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Monsters Creatures Fantasy/Sprites/Flying eye/Take Hit.png using Guid(244d2b7af82202d4daae9b898fd596d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abd763ba44da1aeeec1eb1819da862c') in 0.024292 seconds
+  Import took 0.027397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/UnityAssets/2D Zombie/Spine2D Animations Exports/Zombie_Normal.png
+  artifactKey: Guid(98fa05f8e08cc6b499db8b5df5cc3b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Spine2D Animations Exports/Zombie_Normal.png using Guid(98fa05f8e08cc6b499db8b5df5cc3b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bcc22eb0b4c89c0c31f3d4240a242c') in 0.022368 seconds
+  Import took 0.025549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-9.png
+  artifactKey: Guid(15274a3e6e7df2642aa09dc44671d833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-9.png using Guid(15274a3e6e7df2642aa09dc44671d833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '703bba51f065724582315f813c078808') in 0.015228 seconds
+  Import took 0.018617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-2.png
+  artifactKey: Guid(31f60db64b796164bb8fa35735e9a76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/dead-2.png using Guid(31f60db64b796164bb8fa35735e9a76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd294fbc709201cb70998379b0bddb40') in 0.016144 seconds
+  Import took 0.019112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/UnityAssets/Underwater Diving/Art/Sprites/enemies/fish-big.png
+  artifactKey: Guid(9ac146eb965354e8dabdbeef12886ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Underwater Diving/Art/Sprites/enemies/fish-big.png using Guid(9ac146eb965354e8dabdbeef12886ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ea308ed14c8bd4dcd64c742df9359e') in 0.016033 seconds
+  Import took 0.019430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-6.png
+  artifactKey: Guid(6bd35ac1b580ddd4e87246dcf0dc4eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-6.png using Guid(6bd35ac1b580ddd4e87246dcf0dc4eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5121dc4aef15dd6407378387de3807b3') in 0.017794 seconds
+  Import took 0.021070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-4.png
+  artifactKey: Guid(9fb7783f3be19e247a2166332029b4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-4.png using Guid(9fb7783f3be19e247a2166332029b4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450bf91c932edc661af079f550e4aa89') in 0.015182 seconds
+  Import took 0.018263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Take Hit.png
+  artifactKey: Guid(d8958855ae433194aae8dc9ee0b23e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Take Hit.png using Guid(d8958855ae433194aae8dc9ee0b23e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14f06f31e09e91aa54e97c6aec6d88a') in 0.024039 seconds
+  Import took 0.027709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-10.png
+  artifactKey: Guid(001788cefd5b75f4dbf280b778ffd227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-10.png using Guid(001788cefd5b75f4dbf280b778ffd227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3984ca3f644d617c491eaacf3d02770d') in 0.015093 seconds
+  Import took 0.018722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Move.png
+  artifactKey: Guid(a48b0037be4645c4c913e26853a053cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Move.png using Guid(a48b0037be4645c4c913e26853a053cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3f05c392260023792b80d18317e6d2') in 0.026190 seconds
+  Import took 0.028938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-2.png
+  artifactKey: Guid(c47945c92819e41d584c4aff1694e68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/EVil Wizard/Sprites/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-2.png using Guid(c47945c92819e41d584c4aff1694e68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4b5d417b106a739edc095b27ebfc6d') in 0.014853 seconds
+  Import took 0.017952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-5.png
+  artifactKey: Guid(ff8c22abfeb161146a5de37d00a1430d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-5.png using Guid(ff8c22abfeb161146a5de37d00a1430d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47802a06eaf168c74ab1998cbf79219d') in 0.017415 seconds
+  Import took 0.020664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-7.png
+  artifactKey: Guid(8804832af51fd224e833907ef31ab1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-7.png using Guid(8804832af51fd224e833907ef31ab1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd43b6ecd15cdab3226d8fb19835123') in 0.015665 seconds
+  Import took 0.018870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-1.png
+  artifactKey: Guid(cde6a51afd6aa9a408d1258d11671bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-1.png using Guid(cde6a51afd6aa9a408d1258d11671bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46fbea088f73d9c4f6c6aa95f19e28d') in 0.015843 seconds
+  Import took 0.018993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/UnityAssets/2D Zombie/Unity Native Animations/Zombie_Normal.png
+  artifactKey: Guid(1d44309ecdaa8244eb75229d95f7b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Unity Native Animations/Zombie_Normal.png using Guid(1d44309ecdaa8244eb75229d95f7b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ada6289e2d0ad4a306aa10c2d6dddf') in 0.023272 seconds
+  Import took 0.026274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-2.png
+  artifactKey: Guid(3e943c1d00529284eb403cf58465cd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/jump-2.png using Guid(3e943c1d00529284eb403cf58465cd2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f680e4bea74cd181adb21d38d17fba89') in 0.015393 seconds
+  Import took 0.018211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/UnityAssets/2D Zombie/PSD file/Zombies.psd
+  artifactKey: Guid(12c52272989530441b22dd8ffdd9e7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/PSD file/Zombies.psd using Guid(12c52272989530441b22dd8ffdd9e7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb14a2bab0f623e6a607444f8cac7db') in 0.025733 seconds
+  Import took 0.028637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-1.png
+  artifactKey: Guid(32cfc26b3378a8b4f9d93e72c7c2cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-1.png using Guid(32cfc26b3378a8b4f9d93e72c7c2cb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06681d9fdc7a46431800f0bb5017a95d') in 0.016262 seconds
+  Import took 0.019103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-6.png
+  artifactKey: Guid(e4c3f65507bfa64438de32a3a28aebc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-6.png using Guid(e4c3f65507bfa64438de32a3a28aebc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc4b3150f51c23d6c1f7a703ac6b6a0') in 0.014958 seconds
+  Import took 0.018186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-3.png
+  artifactKey: Guid(5061efb2ab941b4449aeacbbeab9e90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/run-3.png using Guid(5061efb2ab941b4449aeacbbeab9e90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4610394aee49f30ffaf0ce126d18a400') in 0.015623 seconds
+  Import took 0.018474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/idle-2.png
+  artifactKey: Guid(c9625408524ce384f927cdec175e67b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Hero and Opponents/Sprites/Enemy5/idle-2.png using Guid(c9625408524ce384f927cdec175e67b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32246930d3a8f4147613074f72b58db2') in 0.016903 seconds
+  Import took 0.020051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.488412 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2548883cf781960d140f1b7ea38f298a') in 0.010816 seconds
+  Import took 0.014339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.681665 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2846db28560af2bb7787678e9ed223e9') in 0.008266 seconds
+  Import took 0.011637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.536409 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563b5213af9dff1048e67e948f922139') in 0.009497 seconds
+  Import took 0.014038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.105532 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6635fd5763097f49f55e6f6afa9d55d4') in 0.009416 seconds
+  Import took 0.026028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 146.103842 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65323b018657d7d29ca10ffb3ba2384') in 0.010981 seconds
+  Import took 0.014958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.838673 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b88777992de6028c5a1112f9ee8a48') in 0.014978 seconds
+  Import took 0.018921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.771147 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1185ee5d7fa883f2fa7de2b6888fb33') in 0.008745 seconds
+  Import took 0.012985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.521408 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699845718890d7fd508b5692454336b2') in 0.009764 seconds
+  Import took 0.013757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.340989 seconds.
+  path: Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Fire.mat
+  artifactKey: Guid(dce4faabfa7d00147bb7d853e5c1fbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Fire.mat using Guid(dce4faabfa7d00147bb7d853e5c1fbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fe201a7fd05cf67de06e1037523906') in 0.051543 seconds
+  Import took 0.055000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Glow.mat
+  artifactKey: Guid(6c48dc6ed4cda324b83bb2391ca6fb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Glow.mat using Guid(6c48dc6ed4cda324b83bb2391ca6fb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60a07e8820239c8fad101dcaac96baf') in 0.015953 seconds
+  Import took 0.019579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Spark.mat
+  artifactKey: Guid(23524a906e8f5eb4384f92eb87af52f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Spark.mat using Guid(23524a906e8f5eb4384f92eb87af52f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352f8a3ae9e96813074a39cb49b14c1c') in 0.014304 seconds
+  Import took 0.017375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Glow.mat
+  artifactKey: Guid(6c48dc6ed4cda324b83bb2391ca6fb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Glow.mat using Guid(6c48dc6ed4cda324b83bb2391ca6fb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60a07e8820239c8fad101dcaac96baf') in 0.006477 seconds
+  Import took 0.010225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Fire.mat
+  artifactKey: Guid(dce4faabfa7d00147bb7d853e5c1fbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Cainos/Pixel Art Platformer - Village Props/Material/MT FX Particle Torch Fire.mat using Guid(dce4faabfa7d00147bb7d853e5c1fbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fe201a7fd05cf67de06e1037523906') in 0.007115 seconds
+  Import took 0.010554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/UnityAssets/2D Zombie/Unity Native Animations/Zombie_Normal_Material.mat
+  artifactKey: Guid(97d2e373d7c7c6e41b5aa688e9f85c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/2D Zombie/Unity Native Animations/Zombie_Normal_Material.mat using Guid(97d2e373d7c7c6e41b5aa688e9f85c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e30e5dc2e67d1699d4cf63ce5cc8bf') in 0.017704 seconds
+  Import took 0.020997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.630445 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a6cf4f148ec26d80e7f3d8571abfbd') in 0.011349 seconds
+  Import took 0.015256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 180.378476 seconds.
+  path: Assets/Prefabs/Enemy/Fish.prefab
+  artifactKey: Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Fish.prefab using Guid(192a0e7dae0c3014eb5518c842f2cd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358eb410e5afc8ba4b81cc97b6d9114e') in 0.010038 seconds
+  Import took 0.013185 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001193 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.784 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1984 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2515.
+Total: 2.001500 ms (FindLiveObjects: 0.350400 ms CreateObjectMapping: 0.103100 ms MarkObjects: 1.502700 ms  DeleteObjects: 0.044500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.757 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1984 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.0 MB.
+System memory in use after: 98.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2517.
+Total: 2.051900 ms (FindLiveObjects: 0.185700 ms CreateObjectMapping: 0.067800 ms MarkObjects: 1.777600 ms  DeleteObjects: 0.019000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001182 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1984 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.0 MB.
+System memory in use after: 98.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2519.
+Total: 1.793000 ms (FindLiveObjects: 0.207200 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.505900 ms  DeleteObjects: 0.012100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1984 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.0 MB.
+System memory in use after: 98.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2521.
+Total: 1.914800 ms (FindLiveObjects: 0.183900 ms CreateObjectMapping: 0.070300 ms MarkObjects: 1.640800 ms  DeleteObjects: 0.018300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 971.690319 seconds.
+  path: Assets/UnityAssets/Underwater Diving/Art/Sprites/enemies/Fish.controller
+  artifactKey: Guid(c38bd1a4e47bfa649899c78694b7efbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAssets/Underwater Diving/Art/Sprites/enemies/Fish.controller using Guid(c38bd1a4e47bfa649899c78694b7efbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '773bc1a82e973d48630f7d34d0eba1c7') in 0.019038 seconds
+  Import took 0.022563 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
