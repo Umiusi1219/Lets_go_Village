@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class AlphaObjectScript : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class AlphaObjectScript : MonoBehaviour
 
     void Start()
     {
-        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        this.GetComponent<Tilemap>().color = new Color(1f, 1f, 1f, 0f);
     }
 
     private void FixedUpdate()
@@ -32,11 +33,11 @@ public class AlphaObjectScript : MonoBehaviour
         
         if (doAlpha)
         {
-            if (this.GetComponent<SpriteRenderer>().color != new Color(1f, 1f, 1f, 1f))
+            if (this.GetComponent<Tilemap>().color != new Color(1f, 1f, 1f, 1f))
             {
-                this.GetComponent<SpriteRenderer>().color += new Color(0, 0, 0, alphaAddNum);
+                this.GetComponent<Tilemap>().color += new Color(0, 0, 0, alphaAddNum / 60);
             }
-            else if (this.GetComponent<SpriteRenderer>().color == new Color(1f, 1f, 1f, 1f))
+            else if (this.GetComponent<Tilemap>().color == new Color(1f, 1f, 1f, 1f))
             {
                 yield return new WaitForSeconds(showTime);
 
@@ -46,9 +47,9 @@ public class AlphaObjectScript : MonoBehaviour
         }
         else if (!doAlpha)
         {
-            if (this.GetComponent<SpriteRenderer>().color != new Color(1f, 1f, 1f, 0f))
+            if (this.GetComponent<Tilemap>().color != new Color(1f, 1f, 1f, 0f))
             {
-                this.GetComponent<SpriteRenderer>().color -= new Color(0, 0, 0, alphaAddNum);
+                this.GetComponent<Tilemap>().color -= new Color(0, 0, 0, alphaAddNum / 60);
             }
         }
     }

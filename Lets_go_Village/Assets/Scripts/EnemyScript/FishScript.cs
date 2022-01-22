@@ -75,7 +75,6 @@ public class FishScript : EnemyAdstract
     void dead()
     {
         fishDed = true;
-        gameObject.GetComponent<Animator>().SetTrigger("ded");
         gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
         StartCoroutine(DethTime());
     }
@@ -115,13 +114,13 @@ public class FishScript : EnemyAdstract
 
     IEnumerator Hurt()
     {
-        this.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 0f);
+        this.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
         yield return new WaitForSeconds(0.1f);
-        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         yield return new WaitForSeconds(0.1f);
-        this.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 0f);
+        this.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
         yield return new WaitForSeconds(0.1f);
-        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         yield return new WaitForSeconds(0.1f);
     }
 
