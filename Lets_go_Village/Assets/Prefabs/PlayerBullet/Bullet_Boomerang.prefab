@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f0342947b378d42adf67a2ca448d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 2
   bulletSpeed: 0.22
   bulletAliveTime: 8
   m_BulletCoolTime: 0.2

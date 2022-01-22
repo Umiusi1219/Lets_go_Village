@@ -15,6 +15,7 @@ TagManager:
   - VehicleBullet
   - water
   - aaa
+  - Slot
   layers:
   - Default
   - TransparentFX

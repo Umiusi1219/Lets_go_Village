@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb13b75565064cd4c816653f36b81af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 4
   m_BulletCoolTime: 0.4
   bulletPower: 2
   impulseFoce: {x: 3.5, y: 11}

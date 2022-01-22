@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet_ChikenScript : PlayerBulletAdstract
 {
+    [SerializeField] playerBulletType bulletType;
+
     //クールタイムの秒数(プレイヤーに値を渡して使用する)
     [SerializeField] float m_BulletCoolTime;
     //弾の威力
@@ -43,7 +45,8 @@ public class Bullet_ChikenScript : PlayerBulletAdstract
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Enemy" || collision.tag == "Chest" ||
-             collision.tag == "Map" || collision.tag == "AlphaMap")
+             collision.tag == "Map" || collision.tag == "AlphaMap"
+             || collision.tag == "Slot")
         {
            Destroy(gameObject);
         }
@@ -66,6 +69,11 @@ public class Bullet_ChikenScript : PlayerBulletAdstract
     public override float GetBulletPower()
     {
         return bulletPower;
+    }
+
+    public override string GetBulletType()
+    {
+        return bulletType.ToString();
     }
 }
 

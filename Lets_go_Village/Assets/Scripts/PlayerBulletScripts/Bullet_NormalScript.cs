@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet_NormalScript : PlayerBulletAdstract
 {
+    [SerializeField] playerBulletType bulletType;
+
     //íeÇÃë¨ìx
     [SerializeField] float bulletSpeed;
     //é©ìÆè¡ñ≈Ç‹Ç≈ÇÃéûä‘
@@ -51,7 +53,8 @@ public class Bullet_NormalScript : PlayerBulletAdstract
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag == "Enemy" || collision.tag == "Chest"||
-            collision.tag == "Map" || collision.tag == "AlphaMap")
+            collision.tag == "Map" || collision.tag == "AlphaMap"
+            || collision.tag == "Slot")
         {
             Destroy(gameObject);
         }
@@ -65,5 +68,10 @@ public class Bullet_NormalScript : PlayerBulletAdstract
     public override float GetBulletPower()
     {
         return bulletPower;
+    }
+
+    public override string GetBulletType()
+    {
+        return bulletType.ToString();
     }
 }

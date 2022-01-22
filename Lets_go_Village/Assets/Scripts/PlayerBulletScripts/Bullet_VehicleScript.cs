@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet_VehicleScript : PlayerBulletAdstract
 {
+    [SerializeField] playerBulletType bulletType;
+
     [SerializeField] float DownSpeed;
     //’e‚Ì‘¬“x
     [SerializeField] float bulletSpeed;
@@ -58,7 +60,8 @@ public class Bullet_VehicleScript : PlayerBulletAdstract
         }
 
         if (collision.tag == "Enemy" || collision.tag == "Chest" ||
-     collision.tag == "Map" || collision.tag == "AlphaMap")
+        collision.tag == "Map" || collision.tag == "AlphaMap"
+        || collision.tag == "Slot")
         {
             Destroy(gameObject);
         }
@@ -72,5 +75,10 @@ public class Bullet_VehicleScript : PlayerBulletAdstract
     public override float GetBulletPower()
     {
         return bulletPower;
+    }
+
+    public override string GetBulletType()
+    {
+        return bulletType.ToString();
     }
 }

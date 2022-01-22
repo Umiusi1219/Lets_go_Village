@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HAIYORU_UnderSensorScript : MonoBehaviour
 {
+    [SerializeField] playerBulletType bulletType;
+
     [SerializeField] GameObject haiyoru_manage;
 
     // Start is called before the first frame update

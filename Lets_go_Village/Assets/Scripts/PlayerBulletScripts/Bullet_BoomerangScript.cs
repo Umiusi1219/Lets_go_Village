@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bullet_BoomerangScript : PlayerBulletAdstract
 {
+    [SerializeField] playerBulletType bulletType;
+
+
     //íeÇÃë¨ìx
     [SerializeField] float bulletSpeed;
     //é©ìÆè¡ñ≈Ç‹Ç≈ÇÃéûä‘
@@ -73,7 +76,8 @@ public class Bullet_BoomerangScript : PlayerBulletAdstract
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Enemy" || collision.tag == "Chest" ||
-            collision.tag == "Map" || collision.tag == "AlphaMap")
+            collision.tag == "Map" || collision.tag == "AlphaMap"
+            || collision.tag == "Slot")
         {
             Destroy(gameObject);
         }
@@ -93,5 +97,10 @@ public class Bullet_BoomerangScript : PlayerBulletAdstract
     {
         yield return new WaitForSeconds(timeToTurn);
         doTurn = true;
+    }
+
+    public override string GetBulletType()
+    {
+        return bulletType.ToString();
     }
 }

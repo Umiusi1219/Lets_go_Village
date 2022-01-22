@@ -34,4 +34,9 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("GameOverScene");
     }
+
+    public void ToGate()
+    {
+        SceneManager.LoadScene("Boss_1Scene");
+    }
 }

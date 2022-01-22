@@ -18,4 +18,7 @@ abstract public class PlayerBulletAdstract : MonoBehaviour
     abstract public float GetCooltime();
 
     abstract public float GetBulletPower();
+
+    abstract public string GetBulletType();
+        
 }

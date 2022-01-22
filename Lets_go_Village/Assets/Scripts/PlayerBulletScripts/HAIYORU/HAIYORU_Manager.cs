@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HAIYORU_Manager : PlayerBulletAdstract
 {
+    [SerializeField] playerBulletType bulletType;
+
     [SerializeField] public bool m_HAIYORU_UnderSensor;
 
     [SerializeField] public bool m_HAIYORU_ForwardSensor = false;
@@ -94,4 +96,8 @@ public class HAIYORU_Manager : PlayerBulletAdstract
         return 0;
     }
 
+    public override string GetBulletType()
+    {
+        return bulletType.ToString();
+    }
 }

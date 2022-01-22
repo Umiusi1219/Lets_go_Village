@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviour
@@ -51,8 +52,10 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         //Restart();
-
-        playerParent.transform.position = generatPoints[CheckPointScript.m_nowCheckpoint];
+        if (SceneManager.GetActiveScene().name == "GameScene")
+        {
+            playerParent.transform.position = generatPoints[CheckPointScript.m_nowCheckpoint];
+        }
     }
 
 
@@ -261,7 +264,8 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Map" || other.tag == "AlphaMap"
-            || other.tag == "Chest" || other.tag == "VehicleBullet")
+            || other.tag == "Chest" || other.tag == "VehicleBullet"
+            || other.tag == "Slot")
         {
             anim.SetBool("isJump", false);
             keepPressingSpace = false;
@@ -286,7 +290,8 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Map" || other.tag == "AlphaMap"
-            || other.tag == "Chest" || other.tag == "VehicleBullet")
+            || other.tag == "Chest" || other.tag == "VehicleBullet"
+            || other.tag == "Slot")
         {
             anim.SetBool("isJump", true);
         }

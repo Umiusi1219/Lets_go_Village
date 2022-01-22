@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d7fe7a8daf12746ab2812f504ab4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   m_HAIYORU_UnderSensor: 0
   m_HAIYORU_ForwardSensor: 0
   destroyFlag: 0
@@ -228,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345814bcb4389614c8f37ef47bea125c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   bulletPower: 2
   haiyoru_manager: {fileID: 0}
 --- !u!1 &4111122064765164202
@@ -300,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e521b712720b84d894c85717b5889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   haiyoru_manager: {fileID: 0}
 --- !u!1 &9158477430743097092
 GameObject:
@@ -371,4 +374,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b67452b7659ebd45b8df18e1ad3e55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   haiyoru_manage: {fileID: 0}

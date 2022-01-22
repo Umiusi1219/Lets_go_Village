@@ -51,6 +51,6 @@ public class ChestGoldScript : MonoBehaviour
     IEnumerator ItemGenerationTime(GameObject GeneratObj)
     {
         yield return new WaitForSeconds(generationTime);
-        Instantiate(Iteme).transform.position = new Vector3(gameObject.transform.position.x,gameObject.transform.position.y+1,0) ;
+        Instantiate(GeneratObj).transform.position = new Vector3(gameObject.transform.position.x,gameObject.transform.position.y+1,0) ;
     }
 }
